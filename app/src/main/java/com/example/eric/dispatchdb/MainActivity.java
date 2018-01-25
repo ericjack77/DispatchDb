@@ -51,13 +51,18 @@ public class MainActivity extends AppCompatActivity
         myRef.setValue(cranedata);   //傳value
 
         ArrayList<Employee> employees =new ArrayList<>();
-        employees.add(new Employee(1,"邱柏銘","助手","0977165804","F123456789","820630"));
+        employees.add(new Employee(1,"邱柏銘","助手","0977165804","F123526789","820630"));
         employees.add(new Employee(2,"將大寶","司機","0963210258","F987654321","852014"));
         employees.add(new Employee(3,"將小寶","助手","0965510258","F982354321","845014"));
         employees.add(new Employee(4,"將阿財","司機","0663210258","F987645321","852052"));
         employees.add(new Employee(5,"將萬得","司機","0963225258","F987524321","852524"));
         employees.add(new Employee(6,"阿祿仔","司機","0962525258","M987545321","852144"));
         employees.add(new Employee(7,"劉阿喜","助手","0963212258","U127524321","852524"));
+        employees.add(new Employee(8,"大鶯歌","管理","0952334455","U585858585","232323"));
+        employees.add(new Employee(8,"小肥仔","管理","0988776655","C777777777","564878"));
+
+
+
 
         String employeeList = gson.toJson(employees);
         myRef = database.getReference("employeeList");
